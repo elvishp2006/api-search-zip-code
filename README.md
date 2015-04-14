@@ -3,6 +3,7 @@ JavaScript for search CEP on free API
 
 How to use:
 
+<pre>
 Search.CEP( jQuery( '#gform_6' ), {
 	bairro: '#input_6_16',
 	cep: '#input_6_7',
@@ -10,3 +11,4 @@ Search.CEP( jQuery( '#gform_6' ), {
 	logradouro: '#input_6_9',
 	uf: '#input_6_13'
 } );
+</pre>
