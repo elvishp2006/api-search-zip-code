@@ -1,24 +1,36 @@
 Module( "Search.CEP", function(CEP) {
-	CEP.fn.initialize = function(container) {
+	CEP.fn.initialize = function(container, object) {
 		this.container       = container;
-		this.inputBairro     = container.find( '.input-bairro' );
-		this.inputCEP        = container.find( '.input-cep' );
-		this.inputCidade     = container.find( '.input-cidade' );
-		this.inputLogradouro = container.find( '.input-logradouro' );
-		this.inputSiglaUF    = container.find( '.input-sigla-uf' );
-		this.inputUF         = container.find( '.input-uf' );
+		this.inputBairro     = container.find( object.bairro );
+		this.inputCEP        = container.find( object.cep );
+		this.inputCidade     = container.find( object.cidade );
+		this.inputLogradouro = container.find( object.logradouro );
+		this.inputSiglaUF    = container.find( object.siglauf );
+		this.inputUF         = container.find( object.uf );
 
 		this.addEventListener();
 	};
 
 	CEP.fn.addEventListener = function() {
-		this.container
-			.on( 'click', '[data-action=search]', this._onClick.bind( this ) )
+		this.inputCEP
+			.on( 'focusout', this._onFocusOut.bind( this ) )
 		;
 	};
 
-	CEP.fn._onClick = function(event) {
+	CEP.fn._isValidCEP = function(value) {
+		var objER = /^[0-9]{2}[0-9]{3}[0-9]{3}$/;
+
+		value = jQuery.trim(value);
+
+		value = value.replace(/[^0-9]/g,'');
+
+		return objER.test(value) ? true : false;
+	};
+
+	CEP.fn._onFocusOut = function(event) {
 		var value = this.inputCEP.val();
+
+		if ( ! this._isValidCEP( value ) ) { return; }
 
 		jQuery.ajax({
 			url: "http://api.postmon.com.br/v1/cep/" + value,
@@ -35,7 +47,7 @@ Module( "Search.CEP", function(CEP) {
 		this.inputBairro.val( bairro );
 		this.inputCidade.val( cidade );
 		this.inputLogradouro.val( logradouro );
-		this.inputSiglaUF.val( estado );
+		this.inputSiglaUF.val( siglaUF );
 		this.inputUF.val( UF );
 	};
 
