@@ -1,1 +1,8 @@
-console.log('This would be the main JS file.');
+Search.CEP( jQuery( '#cadastro' ), {
+	bairro: '#bairro',
+	cep: '#cep',
+	cidade: '#cidade',
+	logradouro: '#logradouro',
+	siglauf: '#siglauf',
+	uf: '#uf'
+} );
