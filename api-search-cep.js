@@ -41,7 +41,7 @@ Module( "Search.CEP", function(CEP) {
 		var bairro     = (typeof data.bairro != 'undefined') ? data.bairro : '';
 		var cidade     = (typeof data.cidade != 'undefined') ? data.cidade : '';
 		var logradouro = (typeof data.logradouro != 'undefined') ? data.logradouro : '';
-		var siglaUF    = (typeof data.siglaUF != 'undefined') ? data.siglaUF : '';
+		var siglaUF    = (typeof data.estado != 'undefined') ? data.estado : '';
 		var UF         = (typeof data.estado_info.nome != 'undefined') ? data.estado_info.nome : '';
 
 		this.inputBairro.val( bairro );
