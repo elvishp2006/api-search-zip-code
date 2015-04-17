@@ -13,3 +13,5 @@ Search.CEP( jQuery( '#cadastro' ), {
 	uf: '#uf'
 } );
 </pre>
+
+thanks @guilhermessantos
