@@ -14,4 +14,4 @@ Search.CEP( jQuery( '#cadastro' ), {
 } );
 </pre>
 
-thanks @guilhermessantos
+thanks <a href="https://github.com/guilhermessantos">guilhermessantos</a>
