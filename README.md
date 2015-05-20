@@ -25,6 +25,9 @@ JavaScript for search zip code on free API
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+## License
+[MIT License](http://opensource.org/licenses/MIT)
+
 # Thanks
 * [guilhermessantos](https://github.com/guilhermessantos)
 * [kassyn](https://github.com/kassyn)
