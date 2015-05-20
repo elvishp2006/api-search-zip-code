@@ -4,7 +4,7 @@ JavaScript for search zip code on free API
 
 ## Dependencies
 * [jQuery](http://jquery.com/) (>= 1.11.0) or (>= 2.1.0)
-* [MonkeyJS](https://github.com/kassyn/monkeyjs)
+* [MonkeyJS](https://github.com/kassyn/monkeyjs) (module.min.js) on folder libs.
 
 ## Usage
 
