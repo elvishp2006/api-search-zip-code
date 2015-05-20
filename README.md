@@ -1,17 +1,22 @@
-# api_search_cep.js
-JavaScript for search CEP on free API
+# API Search Zip Code
+JavaScript for search zip code on free API
 
-How to use:
+# Dependencies
+<a href="http://jquery.com/">jQuery</a> (>= 1.11.0) or (>= 2.1.0)
+<a href="https://github.com/kassyn/monkeyjs">MonkeyJS</a>
 
+# Usage
 <pre>
-Search.CEP( jQuery( '#cadastro' ), {
-	bairro: '#bairro',
-	cep: '#cep',
-	cidade: '#cidade',
-	logradouro: '#logradouro',
-	siglauf: '#siglauf',
-	uf: '#uf'
-} );
+	<div data-component="search-zip-code">
+		<input type="text" data-element="zip-code" data-action="search">
+		<input type="text" data-element="cidade">
+		<input type="text" data-element="uf">
+		<input type="text" data-element="siglauf">
+		<input type="text" data-element="bairro">
+		<input type="text" data-element="logradouro">
+	</div>
 </pre>
 
-thanks <a href="https://github.com/guilhermessantos">guilhermessantos</a>
+# Thanks
+<a href="https://github.com/guilhermessantos">guilhermessantos</a>
+<a href="https://github.com/kassyn">kassyn</a>
