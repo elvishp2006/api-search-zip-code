@@ -32,19 +32,19 @@
 		<div id="main_content_wrap" class="outer">
 			<section id="main_content" class="inner">
 
-				<div id="cadastro">
+				<div data-component="search-zip-code">
 					<label for="cep">CEP</label>
-					<input type="text" id="cep">
+					<input type="text" data-element="zip-code" data-action="search">
 					<label for="cidade">Cidade</label>
-					<input type="text" id="cidade">
+					<input type="text" data-element="cidade">
 					<label for="uf">UF</label>
-					<input type="text" id="uf">
+					<input type="text" data-element="uf">
 					<label for="siglauf">Sigla UF</label>
-					<input type="text" id="siglauf">
+					<input type="text" data-element="siglauf">
 					<label for="bairro">Bairro</label>
-					<input type="text" id="bairro">
+					<input type="text" data-element="bairro">
 					<label for="logradouro">Logradouro</label>
-					<input type="text" id="logradouro">
+					<input type="text" data-element="logradouro">
 				</div>
 
 			</section>
@@ -55,8 +55,7 @@
 			<footer class="inner">
 				<script src="javascripts/libs/jquery-2.1.3.min.js"></script>
 				<script src="javascripts/libs/module.min.js"></script>
-				<script src="javascripts/api-search-cep.js"></script>
-				<script src="javascripts/main.js"></script>
+				<script src="javascripts/api-search-zip-code.js"></script>
 				<p class="copyright">Api search cep maintained by <a href="https://github.com/elvishp2006">elvishp2006</a></p>
 				<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
 			</footer>
