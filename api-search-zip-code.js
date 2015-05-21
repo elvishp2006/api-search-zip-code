@@ -10,7 +10,7 @@ Module.ComponentWrapper( 'SearchZipCode', function(SearchZipCode) {
 
 	SearchZipCode.fn.isValidZipCode = function(value) {
 		var objER = /^[0-9]{2}[0-9]{3}[0-9]{3}$/;
-		return objER.test( value.replace( /[^0-9]/g,'') ) ? true : false;
+		return objER.test( value.replace( /[^0-9]/g,'') );
 	};
 
 	SearchZipCode.fn._onFocusoutSearch = function() {
